@@ -1,0 +1,183 @@
+.glFormaDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    flex-shrink: 0;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 50px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+.JMBGLabela{
+    font-weight: bold;
+}
+.formaDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 250px;
+}
+
+.unosDiv,.radnikDiv{
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 60px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.unosDiv{
+    
+    background-color:rgb(218, 214, 214);
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+.gornjiDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 250px;
+}
+
+.radnikDiv{
+
+    align-items: left;
+    text-align:left;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(218, 214, 214);
+
+}
+
+.divIme,.divPrezime,.divJmbg{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+table,th,tr,td{
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    min-width: 600px;
+}
+
+.tabelaDiv { 
+    width: 100% ;
+    overflow-x: scroll; 
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+  color: white;
+
+}
+
+.crtanjeDiv{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    min-width: 250px;
+}
+h1{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(116, 108, 106);
+    margin: 0;
+    padding:15px;
+}
+.divZaRbt{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    flex: 1 1 1;
+    align-items: center;
+    justify-content:center;
+    border-radius: 10px;
+}
+.tabelaDiv{
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 1;
+    min-height:  50 px;
+    margin:7px;
+    min-width: 250px;
+    width: 50%;
+}
+.divZaRbt,.divZaMeni{
+    width: 25%;
+    min-width: 250px;
+}
+.jmbgDugmeDiv{
+
+    display: flex;
+    margin: 0;
+    padding:10px;
+}
+body{
+    background-color:ghostwhite;
+    min-width: 400px;
+}
+.porucenoZaDanasLab{
+    display: flex;
+    flex-direction: column;
+}
+.btnFiltriraj{
+    border-radius: 5px;
+    margin: 5px;
+}
+.labMeniji{
+
+    margin:5px;
+    
+}
+.divZaMeni{
+    display: flex;
+    flex-direction: row;
+    flex:1 1 1;
+    margin: 5px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+.btnPoruci{
+    size: 200px;
+    margin: 5px;
+}
+.rbtBtn,.rbtNaziv{
+    margin:5px;
+    align-self: center;
+}
+.btnObrisi{
+    margin: 5px;
+}
+.danasnjaPorudzbina{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    border: 1px solid black;
+    flex: 1 1 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.unosPolje{
+    margin-right: 5px;
+}
+
