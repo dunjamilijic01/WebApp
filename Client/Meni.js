@@ -1,8 +1,9 @@
 export class Meni{
 
-    constructor(id,naziv,jelo,dan,restoran,cena){
+    constructor(id,naziv,jelo,dan,restoran,cena,nazivKantine){
         this.id=id;
         this.naziv=naziv;
+        this.nazivKantine=nazivKantine
         this.jelo=jelo;
         this.dan=dan;
         this.restoran=restoran;
@@ -21,7 +22,7 @@ export class Meni{
         let rbt=document.createElement("input");
         rbt.className="rbtNaziv";
         rbt.type="radio"
-        rbt.name="meniji";
+        rbt.name="meniji"+this.nazivKantine;
         rbt.value=this.id;
         divZaMeni.appendChild(rbt);
 

@@ -78,5 +78,55 @@ namespace Projekat_WEB.Controllers
                 return BadRequest(e.Message);
             }
         }
+        [Route("VratiKantine")]
+        [HttpGet]
+        public async Task<ActionResult> vratiKantine()
+        {
+            try
+            {
+                var kantine= await Context.Kantine.ToListAsync();
+                if(kantine!=null)
+                {
+                    return Ok(kantine);
+                }
+                else{
+                    return BadRequest("Nema ni jedna kantina!!");
+                }
+            }
+            catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [Route("IzbrisiKantinu/{id}")]
+        [HttpDelete]
+        public async Task<ActionResult> izbrisiKantinu(int id)
+        {
+            if(id<0)
+            {
+                return BadRequest("POgresan id kantine!!");
+            }
+
+            try
+            {
+                var kant=await Context.Kantine.FindAsync(id);
+
+                if(kant!=null)
+                {
+                    Context.Kantine.Remove(kant);
+                    await Context.SaveChangesAsync();
+                    return Ok("Uspesno obrisana kantina");
+                }
+                else
+                {
+                    return BadRequest("Ne postoji kantina koju zelite da obrisete!!");
+                }
+            }
+            catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

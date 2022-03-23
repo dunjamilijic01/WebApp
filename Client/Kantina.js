@@ -259,7 +259,7 @@ jmbgFunkcija(){
                         host.appendChild(div);
                             data.forEach(d=>{
                                 Listamenija.push(d);
-                                let meni=new Meni(d.id,d.naziv,d.nazivJela,d.dan,d.restoran,d.cena);
+                                let meni=new Meni(d.id,d.naziv,d.nazivJela,d.dan,d.restoran,d.cena,this.naziv);
                                 meni.crtajMeni(div);
                        
                     })
@@ -370,7 +370,7 @@ jmbgFunkcija(){
     poruci(){
         //let div=this.containerDivZaRbt.querySelector(".divZaRbt");
         //console.log(div);
-        let rbt=this.containerDivZaRbt.querySelector("[name='meniji']:checked");
+        let rbt=this.containerDivZaRbt.querySelector(`[name='meniji${this.naziv}']:checked`);
 
         if(rbt==null)
         {

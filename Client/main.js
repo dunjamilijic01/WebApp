@@ -1,10 +1,23 @@
 import { Kantina } from "./Kantina.js";
 import { Radnik } from "./Radnik.js";
 
-let listaRadnika=[];
+let listaKantina=[];
 
-let k=new Kantina("kantina1");
-k.crtajKantinu(document.body);
-
-let k2=new Kantina("kantina 2");
-k2.crtajKantinu(document.body);
+fetch("https://localhost:5001/Kantina/VratiKantine",
+{
+    method:"GET"
+}).then(p=>
+    {
+        if(p.ok){
+            p.json().then(data=>
+                {
+                    data.forEach(element => {
+                        console.log(element.nazivKantine)
+                        let k=new Kantina(element.nazivKantine);
+                        k.crtajKantinu(document.body);      
+                    });
+                }
+            );
+        }
+    });
+           
