@@ -29,9 +29,8 @@ namespace Projekat_WEB
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<KantinaContext>(options=>{
-                options.UseSqlServer(Configuration.GetConnectionString("KantinaCS"));
-            });
+            services.AddDbContextPool<KantinaContext>(options=>
+                options.UseMySql(Configuration.GetConnectionString("ProbaCS"),ServerVersion.AutoDetect(Configuration.GetConnectionString("ProbaCS"))));
 
             services.AddCors(option=>{
                 option.AddPolicy("Cors",builder=>{

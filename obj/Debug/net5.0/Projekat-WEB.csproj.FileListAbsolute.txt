@@ -57,3 +57,5 @@ C:\Users\Dunja\Desktop\Projekat-WEB\obj\Debug\net5.0\Projekat-WEB.dll
 C:\Users\Dunja\Desktop\Projekat-WEB\obj\Debug\net5.0\ref\Projekat-WEB.dll
 C:\Users\Dunja\Desktop\Projekat-WEB\obj\Debug\net5.0\Projekat-WEB.pdb
 C:\Users\Dunja\Desktop\Projekat-WEB\obj\Debug\net5.0\Projekat-WEB.genruntimeconfig.cache
+C:\Users\Dunja\Desktop\Projekat-WEB\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\Dunja\Desktop\Projekat-WEB\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
